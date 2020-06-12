@@ -13,6 +13,7 @@ class AvatarListPresenter(private val view: View) {
         View.showAvatarList(avatarResponse.avatarList)
     }
 
+
 }
 
 interface View{
