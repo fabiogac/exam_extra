@@ -15,19 +15,15 @@ class AvatarListActivity : AppCompatActivity(), AvatarListPresenter.View {
                 super.onCreate(savedInstanceState)
                 setContentView(R.layout.avatar_list)
 
-                viewManager = LinearLayoutManager(this)
+                avatarList.layoutManager = LinearLayoutManager(this)
                 viewAdapter = AvatarAdapter(myDataset)
-
-                recyclerView = findViewById<RecyclerView>(R.id.my_recycler_view).apply {
-                    // use this setting to improve performance if you know that changes
-                    // in content do not change the layout size of the RecyclerView
-                    setHasFixedSize(true)
+                    avatarList.setHasFixedSize(true)
 
                     // use a linear layout manager
                     layoutManager = viewManager
 
                     // specify an viewAdapter (see also next example)
-                    adapter = viewAdapter
+                    val adapter = AvatarAdapter
 
                 }
             }

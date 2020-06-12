@@ -8,47 +8,78 @@
 
     <TextView
         android:id="@+id/avatarUserName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="26dp"
+        android:hint="userName"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:hint="userName"/>
+        app:layout_constraintTop_toBottomOf="@+id/avatarName"
+        app:layout_constraintVertical_bias="0.026" />
 
     <TextView
         android:id="@+id/avatarName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:hint="Name"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:hint="Name"/>
+        app:layout_constraintVertical_bias="0.056" />
 
     <Spinner
         android:id="@+id/eyes_spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="26dp"
         android:hint="Select the eyes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nose_spinner"
         tools:ignore="MissingConstraints" />
 
     <Spinner
         android:id="@+id/nose_spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Select the nose"/>
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="26dp"
+        android:hint="Select the nose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mouth_spinner" />
 
     <Spinner
         android:id="@+id/mouth_spinner"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Select the mouth"/>
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="26dp"
+        android:hint="Select the mouth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatarUserName" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_width="180"
+        android:layout_height="0dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eyes_spinner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
