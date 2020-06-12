@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Avatar</string>
+    <string-array name="eyes_array">
+        <item>Eyes1</item>
+        <item>Eyes2</item>
+        <item>Eyes3</item>
+        <item>Eyes4</item>
+        <item>Eyes5</item>
+        <item>Eyes6</item>
+        <item>Eyes7</item>
+        <item>Eyes8</item>
+    </string-array>
+    <string-array name="nose_array">
+        <item>Nose1</item>
+        <item>Nose2</item>
+        <item>Nose3</item>
+        <item>Nose4</item>
+        <item>Nose5</item>
+        <item>Nose6</item>
+        <item>Nose7</item>
+        <item>Nose8</item>
+    </string-array>
+    <string-array name="mouth_array">
+        <item>Mouth1</item>
+        <item>Mouth2</item>
+        <item>Mouth3</item>
+        <item>Mouth4</item>
+        <item>Mouth5</item>
+        <item>Mouth6</item>
+        <item>Mouth7</item>
+        <item>Mouth8</item>
+    </string-array>
+</resources>
