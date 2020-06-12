@@ -10,6 +10,8 @@ class AvatarListPresenter(private val view: View) {
     fun init(){
         val avatarResponse = avatarApi.getAvatarbyName("face/{eyes},{nose},{mouth}")
         val avatarResponse = avatarApi.getAvatarbyName()
+
+        view.showAvatarList(avatarResponse.avatarList)
     }
 
 }
