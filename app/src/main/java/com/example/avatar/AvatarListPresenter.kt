@@ -10,7 +10,7 @@ class AvatarListPresenter(private val view: View) {
 
     fun init(){
 
-        view.showAvatarList(avatarResponse.avatarList)
+        View.showAvatarList(avatarResponse.avatarList)
     }
 
 
